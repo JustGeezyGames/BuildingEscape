@@ -20,7 +20,7 @@ void UGrabber::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	UE_LOG(LogTemp, Warning, TEXT("Grabber is here!"));
 	
 }
 
@@ -30,6 +30,17 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+	// Get player view point
+	FVector PlayerViewPointLocation;
+	FRotator PlayerViewPointRotation;
+	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(PlayerViewPointLocation, PlayerViewPointRotation);
+
+	FString PVPLoc = PlayerViewPointLocation.ToString();
+	FString PVPRot = PlayerViewPointRotation.ToString();
+	UE_LOG(LogTemp, Warning, TEXT("Location: %s Rotation: %s"), *PVPLoc, *PVPRot)
+
+	//Ray-cast out to reach distance
+
+	// See what we hit
 }
 
