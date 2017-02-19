@@ -20,6 +20,15 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	AActor* Owner = GetOwner();
+
+	FRotator DoorOpen = FRotator(0.f, 80.f, 0.f);
+
+	Owner->SetActorRotation(DoorOpen);
+
+
+	//UE_LOG(LogTemp, Warning, TEXT("%s rotation is %s"), *Owner, *OwnerRotation)
+
 	// ...
 	
 }
