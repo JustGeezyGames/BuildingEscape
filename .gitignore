@@ -5,9 +5,11 @@
 */Saved
 BuildingEscape/Content/StarterContent/Textures/
 BuildingEscape/Content/StarterContent/HDRI/
+BuildingEscape 4.15/Content/StarterContent/
 
 
 
 *VC.db
-BuildingEscape 4.15/Content/StarterContent/
+*.opendb
+*.sln
 
