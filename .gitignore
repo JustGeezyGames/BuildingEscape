@@ -3,10 +3,11 @@
 */DerivedDataCache
 */Intermediate/
 */Saved
-BuildingEscape/Content/StarterContent/Textures
-BuildingEscape/Content/StarterContent/HDRI
+BuildingEscape/Content/StarterContent/Textures/
+BuildingEscape/Content/StarterContent/HDRI/
 
 
 
 *VC.db
 BuildingEscape 4.15/Content/StarterContent/
+
