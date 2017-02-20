@@ -35,4 +35,8 @@ private:
 	void Grab();
 	void Released();
 	void FindPhysicsHandle();
+	void SetupInput();
+
+	//Return hit for first physics body in reach
+	const FHitResult GetFirstPhysicsBodyInReach();
 };
